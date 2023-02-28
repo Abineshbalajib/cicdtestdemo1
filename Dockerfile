@@ -1,3 +1,7 @@
-FROM openjdk:8
-COPY ./target/employee-producer-0.0.1-SNAPSHOT.jar employee-producer-0.0.1-SNAPSHOT.jar
-CMD ["java","-jar","employee-producer-0.0.1-SNAPSHOT.jar"]
+FROM node:carbon
+RUN mkdir -p /usr/local/helloworld/
+COPY helloworld.js package.json /usr/local/helloworld/
+WORKDIR /usr/local/helloworld/
+RUN npm install --production
+EXPOSE 3000
+ENTRYPOINT [ "node", "helloworld.js" ]
