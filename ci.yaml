@@ -1,0 +1,27 @@
+{
+  "apiVersion": "platform.api.ttc.transportation.trimble.com/v202108",
+  "kind": "Project",
+  "metadata": {
+    "gitRepoName": "trimble.transportation.devops.sample",
+    "googleChatWebhookUrl": "https://chat.googleapis.com/v1/spaces/AAAA1I6BSuM/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=0FaB9c6DPd8h2XAVSd1XHjp0U1BFmXotCZE1O1Fzxpk%3D",
+    "imageName": "tcx/devopssample",
+    "team": "tcx-slipway",
+    "projectName": "tcx",
+    "webhookScanToken": "tcx-devopssample",
+    "artifactory": "false",
+    "monorepo": "false",
+    "scan": "true",
+    "sonar_projectname": {
+      "tcx-devopssample": "TMW.TCX:trimble.transportation.devops.sample"
+    },
+    "whitesource_projectname": {
+      "tcx-devopssample": "trimble.transportation.devops.sample"
+    },
+    "spinnakerPipelineName": {
+      "tcx-devopssample": "tcx-devopssample"
+    },
+    "projectRunType": {
+      "tcx-devopssample": "Please fill"
+    }
+  }
+}
