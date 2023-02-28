@@ -10,10 +10,9 @@ spec:
   team: tcx-slipway
   contacts:
     productOwners:
-    - product_owner@trimble.com
+    - akhilesh_manilal@trimble.com
     technicalContacts:
-    - primary_technical_contact@trimble.com
-    - secondary_technical_contact@trimble.com
+    - akhilesh_manilal@trimble.com
   description: |-
     Describe your service here. This description will be accessible in the Spinnaker application object.
   # If a spinnaker application is manged, the spinnaker operator will lock the pipelines it creates so they cannot be updated within the spinnaker UI and keep them in sync with this YAML file.
