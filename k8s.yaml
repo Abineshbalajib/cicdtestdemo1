@@ -37,7 +37,7 @@ spec:
         kubernetes.io/os: linux
       containers:
         - name: "${ parameters.canonicalName }"
-          image: tcxcontainers.azurecr.io/tcx/devopssample
+          image: tcxcontainers.azurecr.io/tcx/cicddemo01
           env:
             - name: ENV
               value: "${ parameters.env }"
