@@ -2,9 +2,9 @@
   "apiVersion": "platform.api.ttc.transportation.trimble.com/v202108",
   "kind": "Project",
   "metadata": {
-    "gitRepoName": "trimble.transportation.cicd.demo01",
+    "gitRepoName": "trimble.transportation.cicddemo.service04,
     "googleChatWebhookUrl": "https://chat.googleapis.com/v1/spaces/AAAA1I6BSuM/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=0FaB9c6DPd8h2XAVSd1XHjp0U1BFmXotCZE1O1Fzxpk%3D",
-    "imageName": "tcx/cicddemo01",
+    "imageName": "tcx/cicddemoservice04",
     "team": "tcx-slipway",
     "projectName": "tcx",
     "webhookScanToken": "tcx-devopssample",
@@ -12,16 +12,16 @@
     "monorepo": "false",
     "scan": "true",
     "sonar_projectname": {
-      "tcx-cicddemo01": "TMW.TCX:trimble.transportation.cicd.demo01"
+      "tcx-cicddemoservice04": "TMW.TCX:trimble.transportation.cicddemo.service04"
     },
     "whitesource_projectname": {
-      "tcx-cicddemo01": "trimble.transportation.cicd.demo01"
+      "tcx-cicddemoservice04": "trimble.transportation.cicddemo.service04"
     },
     "spinnakerPipelineName": {
-      "tcx-cicddemo01": "tcx-cicddemo01"
+      "tcx-cicddemoservice04": "tcx-cicddemoservice04"
     },
     "projectRunType": {
-      "tcx-cicddemo01": "Please fill"
+      "tcx-cicddemoservice04": "Please fill"
     }
   }
 }

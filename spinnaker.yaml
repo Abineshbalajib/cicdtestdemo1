@@ -3,7 +3,7 @@ apiVersion: spinnaker.cloud.transportation.trimble.com/v1alpha1
 kind: SlipwayDefaultPipeline
 metadata:
   # This is the name of the K8S crd, this name is also used to generate the name of the spinnaker application that is created.
-  name: tcx-cicddemo01 # unique key (enforced by Spinnaker application)
+  name: tcx-cicddemoservice04 # unique key (enforced by Spinnaker application)
   namespace: ttc-spinnaker-operator
 spec:
   # Team and Contacts populate the relevant banners and fields in spinnaker with the contact information.
@@ -45,7 +45,7 @@ spec:
     kubernetesManifest:
       bitbucketFqdn: https://bitbucket.trimble.tools/rest/api/1.0      
       bitbucketProject: TCX-PRODUCT                         
-      bitbucketRepo: trimble.transportation.cicd.demo01
+      bitbucketRepo: trimble.transportation.cicddemo.service04
       bitbucketSpinnakerAccount: bitbucket-tcx-ci
       manifestPath: spinnaker.yaml
       bitbucketBranch: main
@@ -63,12 +63,12 @@ spec:
       imageRegistrySpinnakerTriggerAccount: tcx-docker-registry
       imageRegistry: tcxcontainers.azurecr.io
       imageRegistryOrganization: tcx
-      imageName: cicddemo01
+      imageName: cicddemoservice04
       imageTagTriggerRegEx: '^(master-|main-)?[\d\.]+-\w+$'
     kubernetesManifest:
       bitbucketFqdn: https://bitbucket.trimble.tools/rest/api/1.0
       bitbucketProject: TCX-PRODUCT
-      bitbucketRepo: trimble.transportation.cicd.demo01
+      bitbucketRepo: trimble.transportation.cicddemo.service04
       bitbucketSpinnakerAccount: bitbucket-tcx-ci
       manifestPath: k8s.yaml
   # Define any jenkins stages that are required. This is flexible and stages can be added or removed as needed.
@@ -110,7 +110,7 @@ spec:
       kubernetesManifest:
         bitbucketFqdn: https://bitbucket.trimble.tools/rest/api/1.0
         bitbucketProject: TCX-PRODUCT
-        bitbucketRepo: trimble.transportation.cicd.demo01
+        bitbucketRepo: trimble.transportation.cicddemo.service04
         bitbucketSpinnakerAccount: bitbucket-tcx-ci
         # For paths do not add a leading slash. Example: path/to/file/k8s.yaml
         manifestPath: smoke-test/k8s.yaml
@@ -120,7 +120,7 @@ spec:
       kubernetesManifest:
         bitbucketFqdn: https://bitbucket.trimble.tools/rest/api/1.0
         bitbucketProject: TCX-PRODUCT
-        bitbucketRepo: trimble.transportation.cicd.demo01
+        bitbucketRepo: trimble.transportation.cicddemo.service04
         bitbucketSpinnakerAccount: bitbucket-tcx-ci
         manifestPath: performance-test/k8s.yaml
   # Define as many environments as needed. Each environment will create a separate spinnaker pipeline
@@ -141,7 +141,7 @@ spec:
         keyvaultResourceGroup: tcx-slipway
         keyvaultSubscriptionId: c3858f8e-ebe6-4079-a815-8f4d7826f5de
         keyvaultTenantId: 23235593-4c46-41c1-944b-32a03aab96e6
-        hosts: cicddemo01.dev.trimble-transportation.com
+        hosts: cicddemoservice04.dev.trimble-transportation.com
         apiGatewayHost: api.dev.slipway.transportation.trimble.com
         apiGatewayHostV2: api.dev.v2.ttc.slipway.transportation.trimble.com
         deploymentProgressDeadlineSeconds: "600"
@@ -180,7 +180,7 @@ spec:
         keyvaultResourceGroup: tcx-slipway
         keyvaultSubscriptionId: c3858f8e-ebe6-4079-a815-8f4d7826f5de
         keyvaultTenantId: 23235593-4c46-41c1-944b-32a03aab96e6
-        hosts: cicddemo01.stg.trimble-transportation.com
+        hosts: cicddemoservice04.stg.trimble-transportation.com
         apiGatewayHost: api.stg.slipway.transportation.trimble.com
         apiGatewayHostV2: api.stg.v2.ttc.slipway.transportation.trimble.com
         deploymentProgressDeadlineSeconds: "600"
@@ -219,7 +219,7 @@ spec:
         keyvaultResourceGroup: tcx-slipway
         keyvaultSubscriptionId: 85cae6cd-7015-422a-ae14-d60a136b559b
         keyvaultTenantId: 23235593-4c46-41c1-944b-32a03aab96e6
-        hosts: cicddemo01.trimble-transportation.com
+        hosts: cicddemoservice04.trimble-transportation.com
         apiGatewayHost: api.slipway.transportation.trimble.com
         apiGatewayHostV2: api.v2.ttc.slipway.transportation.trimble.com
         deploymentProgressDeadlineSeconds: "600"
